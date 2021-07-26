@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Text = styled.p``;
 
-const Main = () => {
-  return <Text>오케야 메인!</Text>;
+const Nav = () => {
+  return <Text>네브!</Text>;
 };
 
-export default Main;
+export default Nav;
