@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import Main from './pages/main/main.js';
+import Main from './pages/Main/Main.js';
 
 class Routes extends React.Component {
   render() {
