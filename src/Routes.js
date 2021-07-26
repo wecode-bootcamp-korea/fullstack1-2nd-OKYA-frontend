@@ -6,13 +6,13 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-import Nav from './component/Nav/Nav.js';
+import Nav from './components/Nav/Nav.js';
 import Main from './pages/Main/Main.js';
 import List from './pages/List/List.js';
 import Login from './pages/Login/Login.js';
 import Signup from './pages/Signup/Signup.js';
 import Cart from './pages/Cart/Cart.js';
-import Footer from './component/Footer/Footer.js';
+import Footer from './components/Footer/Footer.js';
 
 class Routes extends React.Component {
   render() {
