@@ -1,12 +1,14 @@
-const theme = {
+const colors = {
   white: '#fff',
-  black: '#111111',
-  blue: '#1558a2',
-  yellow: '#f6da32',
-  yellowDC: '#fcdb00',
-  redDC: '#ca1924',
-  gray: '#f5f5f5',
-  darkgray: ' #929292',
+  black: '#000',
+  grey100: '#9e9e9e',
+  grey200: '#555',
+  grey300: '#3d3d3d',
+  red100: '#ff5757',
+};
+
+const theme = {
+  colors,
 };
 
 export default theme;
