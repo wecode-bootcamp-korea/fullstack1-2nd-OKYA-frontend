@@ -11,7 +11,7 @@ const List = () => {
         setListproduct(data.listProductData);
       });
   }, []);
-  console.log('출력', index);
+
   return (
     <div className="list">
       {listProduct.map((listProduct, index) => {
