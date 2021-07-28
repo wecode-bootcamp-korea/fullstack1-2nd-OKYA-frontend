@@ -1,0 +1,22 @@
+{
+  "mainPromotionData": [
+    {
+      "id": 1,
+      "image_url": "https://i.postimg.cc/FzFMYYM6/111.jpg",
+      "title": "당신이 꿈꾸는 주방을 만나보세요",
+      "desc": "요리는 도구탓이 아니라 실력입니다. 아무리 좋은 도구를 사서 쓰셔도 안되는 건 안되니깐 집에 있는거 쓰세요."
+    },
+    {
+      "id": 2,
+      "image_url": "https://i.postimg.cc/CLQ3KLmv/222.jpg",
+      "title": "OKYA에서는 지금 전 세계 고양이들을 위한 무언가를 진행 중!",
+      "desc": "고양이와 함께 지낸다면 주목하세요. 먹고 자고 싸고, 고양이 인생이 상팔자. 보양할 건 난데 월급은 고양이에게로."
+    },
+    {
+      "id": 3,
+      "image_url": "https://i.postimg.cc/CLz29pSb/333.jpg",
+      "title": "쇼핑 카트에 물건을 담으면",
+      "desc": "아무일도 일어나지 않습니다. 결제를 진행해주세요. 무이자 12개월 까지."
+    }
+  ]
+}

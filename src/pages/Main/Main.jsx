@@ -1,18 +1,37 @@
-import React from 'react';
-import Nav from '../../components/Nav/Nav';
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import Container from '../../components/Container/Container';
+import MasonryWrap from './MasonryWrap';
+import IdeaCategories from './IdeaCategories';
+import MainBanner from './MainBanner';
+import MainPromotion from './MainPromotion';
 
 const Main = () => {
+  const [masonryImages, setMasonryImages] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch('data/mainMasonryImageData.json')
+        .then(res => res.json())
+        .then(data => {
+          setMasonryImages(data.mainMasonryImageData);
+        });
+    };
+    fetchData();
+  }, []);
+
   return (
-    <>
-      <Nav />
-      <Text>오케야 메인!</Text>;
-    </>
+    <Container>
+      <MainBanner />
+      {/* MainPromotion 구현중 */}
+      <MainPromotion />
+      {/* MainPromotion 구현중 */}
+      <IdeaCategories
+        masonryImages={masonryImages}
+        setMasonryImages={setMasonryImages}
+      />
+      <MasonryWrap masonryImages={masonryImages} />
+    </Container>
   );
 };
-
-const Text = styled.p`
-  height: 10000px;
-`;
 
 export default Main;
