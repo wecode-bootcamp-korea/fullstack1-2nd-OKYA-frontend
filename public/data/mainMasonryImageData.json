@@ -1,0 +1,220 @@
+{
+  "mainMasonryImageData": [
+    {
+      "id": 1,
+      "image_url": "https://images.unsplash.com/photo-1601479207163-3c4dd6b0bb91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "image_url": "https://images.unsplash.com/photo-1532344214108-1b6d425db572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "image_url": "https://images.unsplash.com/photo-1586250742655-e0f53e6412a4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGxhbXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 4,
+      "image_url": "https://images.unsplash.com/photo-1617864718148-d3588fc03e4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 5,
+      "image_url": "https://images.unsplash.com/photo-1602503206634-9a39fccff9b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 6,
+      "image_url": "https://images.unsplash.com/photo-1583845112203-29329902332e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "image_url": "https://images.unsplash.com/photo-1596247838521-8b2294dd2b8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 8,
+      "image_url": "https://images.unsplash.com/photo-1616711414334-60abd02a454c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 9,
+      "image_url": "https://images.unsplash.com/photo-1570118941322-5cc156af6850?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 10,
+      "image_url": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 11,
+      "image_url": "https://images.unsplash.com/photo-1622622290845-a0eea419ebdb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 12,
+      "image_url": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 13,
+      "image_url": "https://images.unsplash.com/photo-1616464598304-211e2e1b08b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 14,
+      "image_url": "https://images.unsplash.com/photo-1587023705100-8094f8d47e86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 15,
+      "image_url": "https://images.unsplash.com/photo-1526319460291-c0b235f54886?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 16,
+      "image_url": "https://images.unsplash.com/photo-1611501239726-bd7a70113f0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 17,
+      "image_url": "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 18,
+      "image_url": "https://images.unsplash.com/photo-1616593918824-4fef16054381?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 19,
+      "image_url": "https://images.unsplash.com/photo-1621177555630-b861919c864f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 20,
+      "image_url": "https://images.unsplash.com/photo-1586804186557-8939a72b2239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 21,
+      "image_url": "https://images.unsplash.com/photo-1600494448655-ae58f58bb945?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 22,
+      "image_url": "https://images.unsplash.com/photo-1600054648630-e10e710825f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 23,
+      "image_url": "https://images.unsplash.com/photo-1505658862213-162b60255cb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 24,
+      "image_url": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 25,
+      "image_url": "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 26,
+      "image_url": "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1008&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 27,
+      "image_url": "https://images.unsplash.com/photo-1549877696-a46dda28ffa8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 28,
+      "image_url": "https://images.unsplash.com/photo-1546555802-01af0341ec23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 29,
+      "image_url": "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=983&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 30,
+      "image_url": "https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 31,
+      "image_url": "https://images.unsplash.com/photo-1575995398085-a915e2a56ffa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 32,
+      "image_url": "https://images.unsplash.com/photo-1566618501400-b5f3cacad0ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 33,
+      "image_url": "https://images.unsplash.com/photo-1603512500383-f1f87c13ffc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 34,
+      "image_url": "https://images.unsplash.com/photo-1580313356744-6ac9eeb8ae7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80",
+      "alt": "bedroom",
+      "category_id": 1
+    },
+    {
+      "id": 35,
+      "image_url": "https://images.unsplash.com/photo-1578608724117-4e61ac0ff89f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    },
+    {
+      "id": 36,
+      "image_url": "https://images.unsplash.com/photo-1520940115356-52e16be4351a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "alt": "lighting",
+      "category_id": 2
+    }
+  ]
+}
