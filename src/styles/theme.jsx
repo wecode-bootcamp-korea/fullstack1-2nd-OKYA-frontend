@@ -6,6 +6,7 @@ const theme = {
   yellowDC: '#fcdb00',
   redDC: '#ca1924',
   gray: '#f5f5f5',
+  darkgray: ' #929292',
 };
 
 export default theme;
