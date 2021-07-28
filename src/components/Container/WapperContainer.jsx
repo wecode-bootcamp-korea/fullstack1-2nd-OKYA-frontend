@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav.jsx';
 import Footer from '../Footer/Footer.jsx';
 import styled from 'styled-components';
 
-const Container = ({ children, width }) => {
+const WapperContainer = ({ children, width }) => {
   return (
     <>
       <Nav />
@@ -23,4 +23,4 @@ const GridContainer = styled.div`
   margin: ${props => props.width || '160px 0'};
 `;
 
-export default Container;
+export default WapperContainer;
