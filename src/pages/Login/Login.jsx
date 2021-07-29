@@ -63,4 +63,6 @@ const RightSection = styled.div`
   margin-top: 15rem;
 `;
 
+const Text = styled.p``;
+
 export default Login;
