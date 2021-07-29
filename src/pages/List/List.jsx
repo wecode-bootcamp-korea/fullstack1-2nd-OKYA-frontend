@@ -1,10 +1,31 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import ListProduct from './ListProduct';
 
 const List = () => {
-  return <Text> 리스트! </Text>;
+  const [listProduct, setListproduct] = useState([]);
+
+  useEffect(() => {
+    fetch('data/listProductData.json')
+      .then(res => res.json())
+      .then(data => {
+        setListproduct(data.listProductData);
+      });
+  }, []);
+
+  return (
+    <div className="list">
+      {listProduct.map((listProduct, index) => {
+        return (
+          <ListProduct
+            key={index}
+            id={listProduct.id}
+            img={listProduct.img_url}
+            name={listProduct.product_name}
+            description={listProduct.product_description}
+          />
+        );
+      })}
+    </div>
+  );
 };
-
-const Text = styled.p``;
-
 export default List;

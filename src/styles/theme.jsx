@@ -1,4 +1,4 @@
-const theme = {
+const colors = {
   white: '#fff',
   black: '#111111',
   blue: '#1558a2',
