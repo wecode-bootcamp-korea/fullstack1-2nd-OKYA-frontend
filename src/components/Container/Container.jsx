@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WapperContainer = ({ children, width }) => {
+const Container = ({ children, width }) => {
   return <GridContainer width={width}>{children}</GridContainer>;
 };
 
@@ -15,4 +15,4 @@ const GridContainer = styled.div`
   margin: ${props => props.width || '160px 0'};
 `;
 
-export default WapperContainer;
+export default Container;
