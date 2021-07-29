@@ -2,59 +2,59 @@
   "listProductData": [
     {
       "id": 1,
-      "img_url": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80",
-      "product_name": "LEIFARNE 레이파르네",
+      "image_url": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80",
+      "name": "LEIFARNE 레이파르네",
       "product_hover_name": "LEIFARNE 레이파르네",
-      "product_description": "암체어"
+      "description": "암체어"
     },
     {
       "id": 2,
-      "img_url": "https://images.unsplash.com/photo-1592885331172-bf57d2281135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80",
-      "product_name": "TOBIAS 토비아스",
+      "image_url": "https://images.unsplash.com/photo-1592885331172-bf57d2281135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80",
+      "name": "TOBIAS 토비아스",
       "product_hover_name": "TOBIAS 토비아스",
-      "product_description": "의자"
+      "description": "의자"
     },
     {
       "id": 3,
-      "img_url": "https://images.unsplash.com/photo-1576528418822-5ddc2568621b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
+      "image_url": "https://images.unsplash.com/photo-1576528418822-5ddc2568621b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
       "product_name": "ODGER 오드게르",
       "product_hover_name": "ODGER 오드게르",
       "product_description": "의자"
     },
     {
       "id": 4,
-      "img_url": "https://images.unsplash.com/photo-1622147681210-d7da05b4a7d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
-      "product_name": "ADDE 아데",
+      "image_url": "https://images.unsplash.com/photo-1622147681210-d7da05b4a7d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+      "name": "ADDE 아데",
       "product_hover_name": "ADDE 아데",
-      "product_description": "의자"
+      "description": "의자"
     },
     {
       "id": 5,
-      "img_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
-      "product_name": "TERJE 테리에",
+      "image_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "name": "TERJE 테리에",
       "product_hover_name": "TERJE 테리에",
-      "product_description": "의자"
+      "description": "의자"
     },
     {
       "id": 6,
-      "img_url": "https://images.unsplash.com/photo-1583161904775-f026122d0de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-      "product_name": "OMTÄNKSAM 옴텡크삼",
+      "image_url": "https://images.unsplash.com/photo-1583161904775-f026122d0de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
+      "name": "OMTÄNKSAM 옴텡크삼",
       "product_hover_name": "OMTÄNKSAM 옴텡크삼",
-      "product_description": "의자"
+      "description": "의자"
     },
     {
       "id": 7,
-      "img_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=633&q=80",
-      "product_name": "LERHAMN 레르함",
+      "image_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=633&q=80",
+      "name": "LERHAMN 레르함",
       "product_hover_name": "LERHAMN 레르함",
-      "product_description": "암체어"
+      "description": "암체어"
     },
     {
       "id": 8,
-      "img_url": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80",
-      "product_name": "RÖNNINGE 뢴닝에",
+      "image_url": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80",
+      "name": "RÖNNINGE 뢴닝에",
       "product_hover_name": "RÖNNINGE 뢴닝에",
-      "product_description": "암체어"
+      "description": "암체어"
     }
   ]
 }
