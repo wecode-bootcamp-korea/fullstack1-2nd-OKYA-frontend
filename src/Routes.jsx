@@ -5,7 +5,6 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-
 import Main from './pages/Main/Main';
 import List from './pages/List/List';
 import Login from './pages/Login/Login';

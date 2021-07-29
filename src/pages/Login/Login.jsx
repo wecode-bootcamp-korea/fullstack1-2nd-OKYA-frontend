@@ -57,12 +57,11 @@ const LeftBox = styled.div`
 `;
 
 const RightSection = styled.div`
+  position: relative;
+  top: 15rem;
   grid-column: 7 / 14;
-  line-height: 2em;
+  line-height: 2.7em;
   width: 28rem;
-  margin-top: 15rem;
 `;
-
-const Text = styled.p``;
 
 export default Login;
