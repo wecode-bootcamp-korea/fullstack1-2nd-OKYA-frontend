@@ -6,26 +6,33 @@ import { RiExchangeFundsLine, RiLockLine } from 'react-icons/ri';
 
 const OrderContainer = () => {
   return (
-    <OrderItemContainer>
-      <OrderDetail />
-      <Coupon />
-      <OrderInfoWrap>
-        <OrderInfo>
-          <RiExchangeFundsLine />
-          <Paragraph>반품 정책 365일 이내에 제품 환불 가능</Paragraph>
-        </OrderInfo>
-        <OrderInfo>
-          <RiLockLine />
-          <Paragraph>SSL 데이터 암호화로 안전한 쇼핑</Paragraph>
-        </OrderInfo>
-      </OrderInfoWrap>
-    </OrderItemContainer>
+    <OrderItemWrap>
+      <OrderItemContainer>
+        <OrderDetail />
+        <Coupon />
+        <OrderInfoWrap>
+          <OrderInfo>
+            <RiExchangeFundsLine />
+            <Paragraph>반품 정책 365일 이내에 제품 환불 가능</Paragraph>
+          </OrderInfo>
+          <OrderInfo>
+            <RiLockLine />
+            <Paragraph>SSL 데이터 암호화로 안전한 쇼핑</Paragraph>
+          </OrderInfo>
+        </OrderInfoWrap>
+      </OrderItemContainer>
+    </OrderItemWrap>
   );
 };
 
-const OrderItemContainer = styled.div`
+const OrderItemWrap = styled.div`
   grid-column: 9 / 12;
   margin: 30px 0;
+`;
+
+const OrderItemContainer = styled.div`
+  position: sticky;
+  top: 2.5rem;
 `;
 
 const OrderInfoWrap = styled.div`

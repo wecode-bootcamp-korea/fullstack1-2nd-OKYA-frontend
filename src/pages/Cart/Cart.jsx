@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from '../../components/Container/Container';
-import CartContainer from './CartContainer';
-import OrderContainer from './OrderContainer';
+import CartItem from './CartItem';
 import EmptyCart from './EmptyCart';
 import styled from 'styled-components';
 
 const Cart = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/CartData.json')
+      .then(res => res.json())
+      .then(data => {
+        setCartItems(data.cartData);
+      });
+  }, []);
+
   return (
     <Container>
       <ContainerGridWrap>
-        <CartContainer />
-        <OrderContainer />
-        <EmptyCart />
+        {cartItems.length === 0 ? (
+          <EmptyCart />
+        ) : (
+          <CartItem cartItems={cartItems} />
+        )}
       </ContainerGridWrap>
     </Container>
   );
