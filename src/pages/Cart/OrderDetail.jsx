@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BiRightArrowAlt } from 'react-icons/bi';
 
 const OrderDetail = () => {
   return (
@@ -20,7 +21,9 @@ const OrderDetail = () => {
       </OrderDetails>
       <OrderButton>
         <p>결제하기</p>
-        <span>/</span>
+        <ArrowBtn>
+          <Arrow />
+        </ArrowBtn>
       </OrderButton>
     </>
   );
@@ -67,8 +70,9 @@ const TotalPrice = styled.div`
 const OrderButton = styled.button`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
   width: 100%;
   background-color: #0058a3;
   border-radius: 4px;
@@ -77,6 +81,23 @@ const OrderButton = styled.button`
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background-color: #004b8d;
+  }
+`;
+
+const ArrowBtn = styled.button`
+  padding: 0 2px;
+  border: none;
+  border-radius: 10rem;
+  background-color: #fff;
+`;
+
+const Arrow = styled(BiRightArrowAlt)`
+  padding-top: 2px;
+  font-size: 28px;
 `;
 
 export default OrderDetail;

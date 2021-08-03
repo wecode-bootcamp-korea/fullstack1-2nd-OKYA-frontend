@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BiDotsHorizontalRounded } from 'react-icons/bi';
 
-const CartContainer = () => {
+const CartContainer = porps => {
   const arrQty = new Array(99).fill().map((e, i) => i + 1);
 
   const itemQtySelectOption = arrQty.map((qty, index) => (
@@ -12,29 +11,20 @@ const CartContainer = () => {
   ));
 
   return (
-    <CartItemContainer>
-      <CartHeader>
-        <Header>장바구니</Header>
-        <DotBtn>
-          <BiDotsHorizontalRounded size="18" />
-        </DotBtn>
-      </CartHeader>
+    <>
       <CartItem>
         <ItemIamge>
-          <Image
-            src="https://i.postimg.cc/HW5hdz4g/gunde-folding-chair-white-0728314-pe736185-s3.webp"
-            alt="card"
-          />
+          <Image src={porps.image_url} alt="card" />
         </ItemIamge>
         <CartItemInfoWrap>
           <ItemInfo>
             <div>
-              <ItemDesc>GUNDE 군데</ItemDesc>
-              <ItemDesc>접이식 의자, 화이트</ItemDesc>
+              <ItemDesc>{porps.name}</ItemDesc>
+              <ItemDesc>{porps.description}</ItemDesc>
             </div>
           </ItemInfo>
           <Price>
-            <p>₩ 10,000</p>
+            <p>₩ {porps.price.toLocaleString()}</p>
           </Price>
           <ItemOption>
             <SelectBox>
@@ -45,34 +35,9 @@ const CartContainer = () => {
           </ItemOption>
         </CartItemInfoWrap>
       </CartItem>
-    </CartItemContainer>
+    </>
   );
 };
-
-const CartItemContainer = styled.div`
-  grid-column: 1 / span 7;
-  color: #111;
-`;
-
-const CartHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
-  width: 100%;
-`;
-
-const DotBtn = styled.button`
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: none;
-  text-align: center;
-  background-color: transparent;
-
-  &:hover {
-    background-color: #eee;
-  }
-`;
 
 const CartItem = styled.div`
   display: flex;
@@ -97,11 +62,6 @@ const ItemIamge = styled.div`
 const Image = styled.img`
   width: 140px;
   height: 140px;
-`;
-
-const Header = styled.h1`
-  font-size: 36px;
-  font-weight: 700;
 `;
 
 const ItemInfo = styled.div`

@@ -1,0 +1,61 @@
+{
+  "cartData": [
+    {
+      "id": 1,
+      "image_url": "https://i.postimg.cc/23C0ZdK0/01.jpg",
+      "name": "LEIFARNE 레이파르네",
+      "description": "암체어",
+      "price": 49000
+    },
+    {
+      "id": 2,
+      "image_url": "https://i.postimg.cc/RqGXQ6r4/02.jpg",
+      "name": "TOBIAS 토비아스",
+      "description": "의자",
+      "price": 79900
+    },
+    {
+      "id": 3,
+      "image_url": "https://i.postimg.cc/xcCgsfYH/03.jpg",
+      "name": "ODGER 오드게르",
+      "description": "암체어",
+      "price": 69900
+    },
+    {
+      "id": 4,
+      "image_url": "https://i.postimg.cc/FdpgZqBD/04.jpg",
+      "name": "ADDE 아데",
+      "description": "암체어",
+      "price": 25000
+    },
+    {
+      "id": 5,
+      "image_url": "https://i.postimg.cc/phRJKxqm/09.jpg",
+      "name": "TERJE 테리에",
+      "description": "암체어",
+      "price": 49000
+    },
+    {
+      "id": 6,
+      "image_url": "https://i.postimg.cc/mcxw279N/06.jpg",
+      "name": "OMTÄNKSAM 옴텡크삼",
+      "description": "의자",
+      "price": 37900
+    },
+    {
+      "id": 7,
+      "image_url": "https://i.postimg.cc/LqzVqhBd/07.jpg",
+      "name": "LERHAMN 레르함",
+      "product_hover_name": "LERHAMN 레르함",
+      "description": "암체어",
+      "price": 59900
+    },
+    {
+      "id": 8,
+      "image_url": "https://i.postimg.cc/ZCMH2GKQ/08.jpg",
+      "name": "RÖNNINGE 뢴닝에",
+      "description": "의자",
+      "price": 19900
+    }
+  ]
+}
