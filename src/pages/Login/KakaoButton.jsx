@@ -17,17 +17,18 @@ const loginWithKakao = () => {
     scope: 'profile_nickname, profile_image, account_email, gender, birthday',
     success: authObj => {
       console.log('authObj:토큰확인', authObj);
-      // 로그인 성공시 토큰 발급 받음
+      // 로그인 성공시 토큰 발급 받음, 그 토큰을 백엔드 서버로 넘긴다//
       axios('지현ip/kakao/signup', {
-        //백엔드에서 원하는 형태의 endpoint로 입력해서 fetch한다.
+        method: 'post',
+        //카카오에서 받은 토큰 --> 백엔드 전달//
         headers: {
           'Content-Type': 'application/json',
           Authorization: authObj.access_token,
           //받아오는 response객체의 access_token을 통해 유저 정보를 authorize한다.
         },
       }).then(res => {
-        localStorage.setItem('token', res.data.token);
-        //백엔드에서 요구하는 key 값(token)으로 저장해서 localStorage에 저장한다.
+        localStorage.setItem('token', res.access_token);
+        //백엔드에서 요구하는 key 값(token)으로 저장해서 localStorage에 저장한다.//
         alert('로그인 되었습니다.');
         this.props.history.push('/');
       });
@@ -42,6 +43,7 @@ const kakaoLogout = () => {
   if (window.Kakao.Auth.getAccessToken()) {
     window.Kakao.API.request({
       url: '/v1/user/unlink',
+      //로그아웃 시키는 API//
       success: function (response) {
         console.log(response);
       },
@@ -51,6 +53,7 @@ const kakaoLogout = () => {
     });
     console.log('로그아웃이 완료되었습니다.');
     window.Kakao.Auth.setAccessToken(undefined);
+    //로그아웃 이후 토큰 삭제//
   }
 };
 
@@ -75,7 +78,7 @@ const LogoutButton = styled.button`
   border: 0;
   color: #fff;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 0.88rem;
 `;
 
 export default withRouter(KakaoButton);
