@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = ({ children, width }) => {
-  return <GridContainer width={width}>{children}</GridContainer>;
+const Container = ({ children, marginTop }) => {
+  return <GridContainer marginTop={marginTop}>{children}</GridContainer>;
 };
 
 const GridContainer = styled.div`
@@ -11,8 +11,7 @@ const GridContainer = styled.div`
   column-gap: 1.25rem;
   width: 100%;
   padding: 0 2.5rem 0 1.25rem;
-
-  margin: ${props => props.width || '160px 0'};
+  margin-top: ${props => props.marginTop + 'px'};
 `;
 
 export default Container;
