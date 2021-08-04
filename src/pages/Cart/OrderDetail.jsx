@@ -2,7 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { BiRightArrowAlt } from 'react-icons/bi';
 
-const OrderDetail = () => {
+const OrderDetail = ({ cartItems }) => {
+  const totalPrice = cartItems => {
+    return cartItems
+      .map(cartItem => {
+        const { price, quantity } = cartItem;
+        return price * quantity;
+      })
+      .reduce((l, r) => l + r, 0);
+  };
+
   return (
     <>
       <OrderDetails>
@@ -16,7 +25,7 @@ const OrderDetail = () => {
         </OrderDesc>
         <TotalPrice>
           <p>총 주문금액</p>
-          <p>₩ 10,000</p>
+          <p>₩ {totalPrice}</p>
         </TotalPrice>
       </OrderDetails>
       <OrderButton>
@@ -39,16 +48,15 @@ const OrderDetailParagraph = styled.div`
 `;
 
 const OrderDesc = styled.div`
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
   color: #333;
   font-size: 14px;
 
-  p:last-child {
-    text-align: right;
+  p:first-child {
+    font-weight: 700;
+    margin-bottom: 8px;
   }
 `;
 

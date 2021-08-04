@@ -4,7 +4,7 @@ import { AiOutlineInfoCircle } from 'react-icons/ai';
 
 const Coupon = () => {
   return (
-    <Detail>
+    <details>
       <summary>쿠폰입력</summary>
       <CouponInfo>
         <AiOutlineInfoCircle size="20" color="#0058a3" />
@@ -12,26 +12,9 @@ const Coupon = () => {
       </CouponInfo>
       <Input type="text" placeholder="쿠폰 코드 입력" />
       <Button>쿠폰 적용</Button>
-    </Detail>
+    </details>
   );
 };
-
-// 키프레임 작업 중
-// const Open = keyframes`
-//   from {
-//       opacity: 0;
-//       margin-top: -10px;
-//     }
-//     to {
-//       opacity: 1;
-//       margin-top: 0;
-//     }
-// `;
-
-// 키프레임 작업 중
-const Detail = styled.details`
-  /* animation: sweep 0.5s ease-in-out; */
-`;
 
 const Input = styled.input`
   width: 100%;

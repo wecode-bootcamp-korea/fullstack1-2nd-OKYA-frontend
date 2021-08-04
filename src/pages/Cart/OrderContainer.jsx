@@ -4,11 +4,11 @@ import Coupon from './Coupon';
 import styled from 'styled-components';
 import { RiExchangeFundsLine, RiLockLine } from 'react-icons/ri';
 
-const OrderContainer = () => {
+const OrderContainer = props => {
   return (
     <OrderItemWrap>
       <OrderItemContainer>
-        <OrderDetail />
+        <OrderDetail cartItems={props.cartItems} />
         <Coupon />
         <OrderInfoWrap>
           <OrderInfo>
