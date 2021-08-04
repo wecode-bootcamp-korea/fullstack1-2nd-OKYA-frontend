@@ -10,4 +10,5 @@ const Logo = styled.img`
   width: 88px;
   height: 44px;
 `;
+
 export default WhiteLogo;
