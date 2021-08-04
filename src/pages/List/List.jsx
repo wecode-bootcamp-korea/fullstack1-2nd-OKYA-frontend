@@ -1,31 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import styled from 'styled-components';
+import ListProductExplain from './ListProductExplain';
 import ListProduct from './ListProduct';
+import Container from '../../components/Container/Container';
+import ListCategoryBar from './ListCategoryBar';
 
 const List = () => {
-  const [listProduct, setListproduct] = useState([]);
-
-  useEffect(() => {
-    fetch('data/listProductData.json')
-      .then(res => res.json())
-      .then(data => {
-        setListproduct(data.listProductData);
-      });
-  }, []);
-
   return (
-    <div className="list">
-      {listProduct.map((listProduct, index) => {
-        return (
-          <ListProduct
-            key={index}
-            id={listProduct.id}
-            img={listProduct.img_url}
-            name={listProduct.product_name}
-            description={listProduct.product_description}
-          />
-        );
-      })}
-    </div>
+    <Container>
+      <ListWrap>
+        <ListContainer>
+          <ListProductExplain />
+        </ListContainer>
+        <CatergoryWrap>
+          <ListCategoryBar />
+        </CatergoryWrap>
+        <ListProduct />
+      </ListWrap>
+    </Container>
   );
 };
+
 export default List;
+
+const ListWrap = styled.div`
+  display: grid;
+  grid-column: 2 / span 12;
+`;
+
+const ListContainer = styled.div`
+  margin-top: 50px;
+`;
+
+const CatergoryWrap = styled.div`
+  margin-top: 70px;
+`;
