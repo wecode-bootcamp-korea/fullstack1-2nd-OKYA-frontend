@@ -17,8 +17,9 @@ const CartWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-column: 1 / span 7;
+  grid-column: 1 / span 12;
   height: 100px;
+  border-bottom: 1px solid #ccc;
   color: #111;
 
   p:first-child {
