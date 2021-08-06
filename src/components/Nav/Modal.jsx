@@ -5,13 +5,13 @@ import Blue_Logo from '../../pages/Login/Image/OKYA_logo_blue.png';
 import ModalLower1 from './ModalLower1';
 import ModalLower2 from './ModalLower2';
 
-function Modal({ openmodal, innertogglemodal, innershowModal, closemodal }) {
+function Modal({ innertogglemodal, innershowModal, closemodal }) {
   return (
     <>
       <ModalBackground onClick={closemodal}></ModalBackground>
       <ModalContents>
         <TopWrapper>
-          <CloseButton onClick={openmodal}>
+          <CloseButton onClick={closemodal}>
             <ImCross />
           </CloseButton>
           <OKYALogo src={Blue_Logo} />

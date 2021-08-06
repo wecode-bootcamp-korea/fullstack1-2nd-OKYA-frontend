@@ -6,11 +6,13 @@ import NavMenu from './NavMenu';
 import SearchInput from './SearchInput';
 import Icons from './Icons';
 import Modal from './Modal';
+import ImageSearchModal from './ImageSearchModal';
 import styled from 'styled-components';
 
 function Nav() {
   const [showModal, setshowModal] = useState(false);
   const [innershowModal, setinnershowModal] = useState(false);
+  const [showImageSearchModal, setshowImageSearchModal] = useState(false);
 
   const openmodal = e => {
     setshowModal(!showModal);
@@ -25,13 +27,17 @@ function Nav() {
     setinnershowModal(!innershowModal);
   };
 
+  const toggleimagesearchmodal = e => {
+    setshowImageSearchModal(!showImageSearchModal);
+  };
+
   return (
     <>
       <Container marginTop="20">
         <SideMenuButton openmodal={openmodal} />
         <NavLogo />
         <NavMenu openmodal={openmodal} />
-        <SearchInput />
+        <SearchInput toggleimagesearchmodal={toggleimagesearchmodal} />
         <Icons />
         <ModalWrapper showModal={showModal}>
           <Modal
@@ -42,6 +48,9 @@ function Nav() {
           />
         </ModalWrapper>
       </Container>
+      <ImageModalWRapper showImageSearchModal={showImageSearchModal}>
+        <ImageSearchModal toggleimagesearchmodal={toggleimagesearchmodal} />
+      </ImageModalWRapper>
     </>
   );
 }
@@ -53,8 +62,15 @@ const ModalWrapper = styled.aside`
   bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
   display: ${props => (props.showModal ? '' : 'none')};
+`;
+
+const ImageModalWRapper = styled.aside`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: ${props => (props.showImageSearchModal ? '' : 'none')};
 `;
 
 export default Nav;

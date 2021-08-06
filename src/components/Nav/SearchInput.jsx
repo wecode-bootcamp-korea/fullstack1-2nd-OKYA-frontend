@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { GiMagnifyingGlass } from 'react-icons/gi';
 import { FiCamera } from 'react-icons/fi';
 
-const SearchInput = () => {
+const SearchInput = ({ toggleimagesearchmodal }) => {
   return (
     <SearchBoxWrapper>
       <SearchBox placeholder="검색어 입력" />
       <MagnifyingGlass />
-      <Camera />
+      <Camera onClick={toggleimagesearchmodal} />
     </SearchBoxWrapper>
   );
 };
@@ -35,6 +35,7 @@ const MagnifyingGlass = styled(GiMagnifyingGlass)`
 const Camera = styled(FiCamera)`
   right: 1.3rem;
   top: 1rem;
+  cursor: pointer;
 `;
 
 const SearchBox = styled.input`

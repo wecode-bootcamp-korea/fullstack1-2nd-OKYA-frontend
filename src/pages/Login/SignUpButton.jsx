@@ -1,9 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function SignUpButton() {
-  return <Button>회원가입</Button>;
+  return (
+    <Wrapper to="/signup">
+      <Button>회원가입</Button>
+    </Wrapper>
+  );
 }
+
+const Wrapper = styled(Link)``;
 
 const Button = styled.button`
   margin-top: 15px;
