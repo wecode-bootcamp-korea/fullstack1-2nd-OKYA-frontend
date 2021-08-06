@@ -3,27 +3,27 @@ import styled from 'styled-components';
 import { ImEarth } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 
-const ModalLower1 = ({ innertogglemodal }) => {
+const ModalLower1 = ({ toggleInnermodal }) => {
   return (
     <LowEntireWrapper>
       <LowWrapper1>
-        <ToInnerModal onClick={innertogglemodal}>모든 제품</ToInnerModal>
+        <ToInnerModal onClick={toggleInnermodal}>모든 제품</ToInnerModal>
         <span>디지털 쇼룸</span>
       </LowWrapper1>
       <LowWrapper2>
-        <span>할인중</span>
-        <span>신제품</span>
-        <span>더 낮은 새로운 가격</span>
-        <span>아이디어</span>
-        <span>IKEA Live</span>
-        <span>새로운 소식</span>
+        <li>할인중</li>
+        <li>신제품</li>
+        <li>더 낮은 새로운 가격</li>
+        <li>아이디어</li>
+        <li>IKEA Live</li>
+        <li>새로운 소식</li>
       </LowWrapper2>
       <LowWrapper3>
-        <span>매장안내</span>
-        <span>IKEA Family</span>
-        <span>고객지원</span>
-        <span>배송조회</span>
-        <span>내 프로필</span>
+        <li>매장안내</li>
+        <li>IKEA Family</li>
+        <li>고객지원</li>
+        <li>배송조회</li>
+        <li>내 프로필</li>
       </LowWrapper3>
       <LowWrapper4>
         <select>
@@ -67,7 +67,7 @@ const LowWrapper1 = styled.div`
   line-height: 4rem;
 `;
 
-const LowWrapper2 = styled.div`
+const LowWrapper2 = styled.ul`
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -75,7 +75,7 @@ const LowWrapper2 = styled.div`
   line-height: 2.5rem;
 `;
 
-const LowWrapper3 = styled.div`
+const LowWrapper3 = styled.ul`
   display: flex;
   margin-top: 1.3rem;
   flex-direction: column;

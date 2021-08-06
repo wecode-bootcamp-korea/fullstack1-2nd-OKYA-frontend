@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-function SideMenuButton({ openmodal }) {
+function SideMenuButton({ openModal }) {
   return (
-    <MenuButton onClick={openmodal}>
+    <MenuButton onClick={openModal}>
       <AiOutlineMenu />
     </MenuButton>
   );

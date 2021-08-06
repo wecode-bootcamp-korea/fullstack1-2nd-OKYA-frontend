@@ -4,7 +4,7 @@ import { ImCross } from 'react-icons/im';
 import { FiCamera } from 'react-icons/fi';
 import { GiHazardSign } from 'react-icons/gi';
 
-function ImageSearchModal({ toggleimagesearchmodal }) {
+function ImageSearchModal({ toggleImageSearchModal }) {
   const uploadImage = e => {
     const img = e.target.files[0];
     const formData = new FormData();
@@ -13,24 +13,24 @@ function ImageSearchModal({ toggleimagesearchmodal }) {
 
   return (
     <>
-      <ModalBackground onClick={toggleimagesearchmodal}></ModalBackground>
+      <ModalBackground onClick={toggleImageSearchModal}></ModalBackground>
       <ModalContents>
         <ContentsWrapper>
-          <CloseButton onClick={toggleimagesearchmodal}>
+          <CloseButton onClick={toggleImageSearchModal}>
             <ImCross />
           </CloseButton>
           <Title>이미지로 IKEA 상품 검색하기</Title>
-          <UploadButton>
+          <ImageUploadButton>
             <UploadInput
               type="file"
               accept="image/jpg,impge/png,image/jpeg,image/gif"
               name="prduct_img"
               multiple
               onChange={uploadImage}
-            ></UploadInput>
+            />
             <Camera />
             <UploadButtonText>사진찍기 또는 업로드하기 </UploadButtonText>
-          </UploadButton>
+          </ImageUploadButton>
           <Caution>
             <CautionSign />
             <CautionText>
@@ -42,17 +42,17 @@ function ImageSearchModal({ toggleimagesearchmodal }) {
             또는 아래 이미지 중 하나를 클릭하여 사용해보세요
           </MiddleTitle>
           <ImageWrapper>
-            <Image1 src="https://images.unsplash.com/photo-1603512500383-f1f87c13ffc4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmVkJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></Image1>
-            <Image2 src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVkJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></Image2>
-            <Image3 src="https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></Image3>
-            <Image4 src="https://images.unsplash.com/photo-1556185781-a47769abb7ee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGtpdGNoZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></Image4>
+            <ExampleImage src="https://images.unsplash.com/photo-1603512500383-f1f87c13ffc4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmVkJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></ExampleImage>
+            <ExampleImage src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVkJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></ExampleImage>
+            <ExampleImage src="https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></ExampleImage>
+            <ExampleImage src="https://images.unsplash.com/photo-1556185781-a47769abb7ee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGtpdGNoZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></ExampleImage>
           </ImageWrapper>
           <HowtoWrapper>
             <HowtoTitle>어떻게 작동하나요?</HowtoTitle>
             <HowtoImage src="https://images.unsplash.com/photo-1548126761-75bb795a7d42?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNlbGxwaG9uZSUyMGNhbWVyYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"></HowtoImage>
             <HowtoText>
               방금 본 이름 모를 엄청난 의자를 찾고 있나요? 사진을 찍어보세요.
-              이미지로 검색하여 가장 가까운 제품을 찾을 수 있습니다.
+              이미지로 검색하여 가장 가까운 제품을 찾을수 있습니다.
             </HowtoText>
           </HowtoWrapper>
         </ContentsWrapper>
@@ -114,7 +114,7 @@ const Camera = styled(FiCamera)`
   height: 1.4rem;
 `;
 
-const UploadButton = styled.label`
+const ImageUploadButton = styled.label`
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -167,19 +167,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Image1 = styled.img`
-  width: 185px;
-  height: 210px;
-`;
-const Image2 = styled.img`
-  width: 185px;
-  height: 210px;
-`;
-const Image3 = styled.img`
-  width: 185px;
-  height: 210px;
-`;
-const Image4 = styled.img`
+const ExampleImage = styled.img`
   width: 185px;
   height: 210px;
 `;

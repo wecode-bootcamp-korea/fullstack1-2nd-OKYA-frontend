@@ -9,7 +9,6 @@ function KakaoButton(props) {
     window.Kakao.Auth.login({
       scope: 'account_email',
       success: authObj => {
-        console.log('authObj:토큰확인', authObj);
         // 로그인 성공시 토큰 발급 받음, 그 토큰을 백엔드 서버로 넘긴다//
         axios('http://10.89.1.22:8000/kakao/login', {
           method: 'post',
@@ -44,7 +43,7 @@ function KakaoButton(props) {
           console.log(error);
         },
       });
-      console.log('로그아웃이 완료되었습니다.');
+      alert('로그아웃이 완료되었습니다.');
       window.Kakao.Auth.setAccessToken(undefined);
       //로그아웃 이후 토큰 삭제//
     }

@@ -10,46 +10,46 @@ import ImageSearchModal from './ImageSearchModal';
 import styled from 'styled-components';
 
 function Nav() {
-  const [showModal, setshowModal] = useState(false);
-  const [innershowModal, setinnershowModal] = useState(false);
-  const [showImageSearchModal, setshowImageSearchModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [innerShowModal, setInnerShowModal] = useState(false);
+  const [showImageSearchModal, setShowImageSearchModal] = useState(false);
 
-  const openmodal = e => {
-    setshowModal(!showModal);
+  const openModal = e => {
+    setShowModal(!showModal);
   };
 
-  const closemodal = e => {
-    setinnershowModal(false);
-    setshowModal(false);
+  const closeModal = e => {
+    setInnerShowModal(false);
+    setShowModal(false);
   };
 
-  const innertogglemodal = e => {
-    setinnershowModal(!innershowModal);
+  const toggleInnermodal = e => {
+    setInnerShowModal(!innerShowModal);
   };
 
-  const toggleimagesearchmodal = e => {
-    setshowImageSearchModal(!showImageSearchModal);
+  const toggleImageSearchModal = e => {
+    setShowImageSearchModal(!showImageSearchModal);
   };
 
   return (
     <>
       <Container marginTop="20">
-        <SideMenuButton openmodal={openmodal} />
+        <SideMenuButton openModal={openModal} />
         <NavLogo />
-        <NavMenu openmodal={openmodal} />
-        <SearchInput toggleimagesearchmodal={toggleimagesearchmodal} />
+        <NavMenu openModal={openModal} />
+        <SearchInput toggleImageSearchModal={toggleImageSearchModal} />
         <Icons />
         <ModalWrapper showModal={showModal}>
           <Modal
-            closemodal={closemodal}
-            innershowModal={innershowModal}
-            innertogglemodal={innertogglemodal}
-            openmodal={openmodal}
+            closeModal={closeModal}
+            innerShowModal={innerShowModal}
+            toggleInnermodal={toggleInnermodal}
+            openModal={openModal}
           />
         </ModalWrapper>
       </Container>
       <ImageModalWRapper showImageSearchModal={showImageSearchModal}>
-        <ImageSearchModal toggleimagesearchmodal={toggleimagesearchmodal} />
+        <ImageSearchModal toggleImageSearchModal={toggleImageSearchModal} />
       </ImageModalWRapper>
     </>
   );

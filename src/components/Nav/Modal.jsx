@@ -5,21 +5,21 @@ import Blue_Logo from '../../pages/Login/Image/OKYA_logo_blue.png';
 import ModalLower1 from './ModalLower1';
 import ModalLower2 from './ModalLower2';
 
-function Modal({ innertogglemodal, innershowModal, closemodal }) {
+function Modal({ toggleInnermodal, innerShowModal, closeModal }) {
   return (
     <>
-      <ModalBackground onClick={closemodal}></ModalBackground>
+      <ModalBackground onClick={closeModal}></ModalBackground>
       <ModalContents>
         <TopWrapper>
-          <CloseButton onClick={closemodal}>
+          <CloseButton onClick={closeModal}>
             <ImCross />
           </CloseButton>
           <OKYALogo src={Blue_Logo} />
         </TopWrapper>
-        {innershowModal ? (
-          <ModalLower2 innertogglemodal={innertogglemodal} />
+        {innerShowModal ? (
+          <ModalLower2 toggleInnermodal={toggleInnermodal} />
         ) : (
-          <ModalLower1 innertogglemodal={innertogglemodal} />
+          <ModalLower1 toggleInnermodal={toggleInnermodal} />
         )}
       </ModalContents>
     </>
