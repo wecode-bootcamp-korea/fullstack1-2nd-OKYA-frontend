@@ -10,25 +10,25 @@ const ModalLower2 = ({ innertogglemodal }) => {
         <CloseButton>
           <AiOutlineArrowLeft onClick={innertogglemodal} />
         </CloseButton>
-        <Link>모든 제품</Link>
+        <span>모든 제품</span>
       </LowWrapper1>
       <LowerWrapper>
         <LowWrapper2>
-          <Link>지속가능한 제품</Link>
+          <span>지속가능한 제품</span>
         </LowWrapper2>
         <LowWrapper3>
           <Link to="/list">의자</Link>
-          <Link>가구</Link>
-          <Link>홈스마트</Link>
-          <Link>어린이 IKEA</Link>
-          <Link>수납/정리</Link>
-          <Link>주방가구</Link>
-          <Link>텍스타일</Link>
-          <Link>홈데코/장식품</Link>
-          <Link>욕실</Link>
-          <Link>아웃도어/야외용품</Link>
-          <Link>조명</Link>
-          <Link>러그/매트/데크</Link>
+          <span>가구</span>
+          <span>홈스마트</span>
+          <span>어린이 IKEA</span>
+          <span>수납/정리</span>
+          <span>주방가구</span>
+          <span>텍스타일</span>
+          <span>홈데코/장식품</span>
+          <span>욕실</span>
+          <span>아웃도어/야외용품</span>
+          <span>조명</span>
+          <span>러그/매트/데크</span>
         </LowWrapper3>
       </LowerWrapper>
     </LowEntireWrapper>

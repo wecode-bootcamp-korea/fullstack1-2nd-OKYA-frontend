@@ -7,23 +7,23 @@ const ModalLower1 = ({ innertogglemodal }) => {
   return (
     <LowEntireWrapper>
       <LowWrapper1>
-        <Link onClick={innertogglemodal}>모든 제품</Link>
-        <Link>디지털 쇼룸</Link>
+        <ToInnerModal onClick={innertogglemodal}>모든 제품</ToInnerModal>
+        <span>디지털 쇼룸</span>
       </LowWrapper1>
       <LowWrapper2>
-        <Link>할인중</Link>
-        <Link>신제품</Link>
-        <Link>더 낮은 새로운 가격</Link>
-        <Link>아이디어</Link>
-        <Link>IKEA Live</Link>
-        <Link>새로운 소식</Link>
+        <span>할인중</span>
+        <span>신제품</span>
+        <span>더 낮은 새로운 가격</span>
+        <span>아이디어</span>
+        <span>IKEA Live</span>
+        <span>새로운 소식</span>
       </LowWrapper2>
       <LowWrapper3>
-        <Link>매장안내</Link>
-        <Link>IKEA Family</Link>
-        <Link>고객지원</Link>
-        <Link>배송조회</Link>
-        <Link>내 프로필</Link>
+        <span>매장안내</span>
+        <span>IKEA Family</span>
+        <span>고객지원</span>
+        <span>배송조회</span>
+        <span>내 프로필</span>
       </LowWrapper3>
       <LowWrapper4>
         <select>
@@ -53,6 +53,10 @@ const LowEntireWrapper = styled.div`
   position: relative;
   margin-top: 3rem;
   left: 7.5rem;
+`;
+
+const ToInnerModal = styled.div`
+  cursor: pointer;
 `;
 
 const LowWrapper1 = styled.div`
