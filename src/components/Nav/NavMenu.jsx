@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const NavMenu = ({ openmodal }) => {
+const NavMenu = ({ openModal }) => {
   return (
     <>
-      <Menu1 onClick={openmodal}>모든 제품</Menu1>
+      <Menu1 onClick={openModal}>모든 제품</Menu1>
       <Menu2>디지털 쇼룸</Menu2>
     </>
   );

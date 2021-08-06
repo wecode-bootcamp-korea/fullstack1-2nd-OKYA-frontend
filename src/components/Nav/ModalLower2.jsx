@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-const ModalLower2 = ({ innertogglemodal }) => {
+const ModalLower2 = ({ toggleInnermodal }) => {
   return (
     <LowEntireWrapper>
       <LowWrapper1>
         <CloseButton>
-          <AiOutlineArrowLeft onClick={innertogglemodal} />
+          <AiOutlineArrowLeft onClick={toggleInnermodal} />
         </CloseButton>
         <span>모든 제품</span>
       </LowWrapper1>
