@@ -1,41 +1,35 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IoBasketOutline } from 'react-icons/io5';
+import { useHistory } from 'react-router-dom';
 
 const ListProductCard = props => {
   const [isProductHover, setIsProductHover] = useState(false);
   const { isHighlight, img, hoverImg, name, description, price } = props;
 
-  const accessToken = localStorage.getItem('token');
-
-  if (!accessToken) {
-    alert('로그인이 필요합니다');
-  }
-
-  fetch('POST_API', {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${accessToken}`,
-    },
-  });
+  const token = localStorage.getItem('token');
+  const history = useHistory();
 
   const addToCart = () => {
-    fetch('', {
+    if (!token) {
+      alert('로그인 후 이용하실 수 있습니다.');
+      return history.push('/login');
+    }
+
+    fetch('http://10.89.2.240:8000/carts/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
-        id: props.id,
+        productId: props.id,
+        quantity: 1,
       }),
     })
       .then(response => response.json())
       .then(result => {
-        if (result.token) {
-          localStorage.setItem('token', result.token);
-          alert('장바구니에 담겼습니다.');
-          return props.history.push('/list');
-        }
+        alert('장바구니에 담겼습니다.');
       });
   };
 
@@ -55,7 +49,7 @@ const ListProductCard = props => {
         <img alt={name} src={hoverImg} />
       </ProductCardImage>
       <ProductInfoWrap>
-        <ProductCartInfoWrap>
+        <div>
           <ul>
             <ProductName>{name}</ProductName>
             <ProductDescription>{description}</ProductDescription>
@@ -73,16 +67,16 @@ const ListProductCard = props => {
               </PriceWrap>
             )}
           </ul>
-        </ProductCartInfoWrap>
-        <CartInfoWrap>
+        </div>
+        <CartButtonWrap>
           {isProductHover && (
             <CartButton>
-              <button onClick={addToCart}>
-                <IoBasketOutline />
-              </button>
+              <Button onClick={addToCart}>
+                <IoBasketOutline size="20" />
+              </Button>
             </CartButton>
           )}
-        </CartInfoWrap>
+        </CartButtonWrap>
       </ProductInfoWrap>
     </ProductCardContainer>
   );
@@ -126,20 +120,12 @@ const ProductCardImage = styled.div`
 const ProductInfoWrap = styled.div`
   display: flex;
   justify-content: space-between;
-`;
-
-const ProductCartInfoWrap = styled.div`
-  display: flex;
   margin-top: 20px;
-`;
-
-const CartInfoWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
 `;
 
 const ProductName = styled.li`
   margin-bottom: 8px;
+  width: 60%;
   font-size: 15px;
   font-weight: 900;
 `;
@@ -176,18 +162,22 @@ const Price = styled.div`
   font-family: 'Noto IKEA';
 `;
 
+const CartButtonWrap = styled.div``;
+
 const CartButton = styled.div`
   text-align: center;
-  button {
-    display: block;
-    margin-top: 70px;
-    border: 0;
-    border-radius: 130px;
-    background: #0058a3;
-    color: #fff;
-    font-size: 40px;
-    text-decoration: none;
-  }
+`;
+
+const Button = styled.button`
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 130px;
+  background: #0058a3;
+  color: #fff;
+  font-size: px;
+  text-decoration: none;
 `;
 
 export default ListProductCard;
