@@ -6,7 +6,7 @@
       "hover_image_url": "https://i.postimg.cc/3W7Drncx/01.jpg",
       "name": "YEIFARNE 예의바르네",
       "description": "암체어",
-      "price": "49,900"
+      "price": 49900
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "hover_image_url": "https://i.postimg.cc/V0gWLT83/02.jpg",
       "name": "SINGSEUKEKUNG 싱스케쿵",
       "description": "의자",
-      "price": "79,900"
+      "price": 79900
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "hover_image_url": "https://i.postimg.cc/crkKmZ4v/02.jpg",
       "name": "ODGERE 오디갈레",
       "description": "암체어",
-      "price": "69,900"
+      "price": 69900
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "hover_image_url": "https://i.postimg.cc/6QQnGb57/04.jpg",
       "name": "MINGKI 밍키",
       "description": "암체어",
-      "price": "25,000"
+      "price": 25000
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "hover_image_url": "https://i.postimg.cc/QHd91VsL/03.jpg",
       "name": "KENGTA 켕타",
       "description": "암체어",
-      "price": "49,000"
+      "price": 49000
     },
     {
       "id": 6,
@@ -46,16 +46,15 @@
       "hover_image_url": "https://i.postimg.cc/xXkXp7ct/06.jpg",
       "name": "OMTÄNKSAM 옴텡크삼",
       "description": "의자",
-      "price": "37,900"
+      "price": 37900
     },
     {
       "id": 7,
       "image_url": "https://i.postimg.cc/LqzVqhBd/07.jpg",
       "hover_image_url": "https://i.postimg.cc/Hcmjxk3h/07.jpg",
       "name": "JIHAM 지햄",
-      "product_hover_name": "LERHAMN 레르함",
       "description": "암체어",
-      "price": "59,900"
+      "price": 59900
     },
     {
       "id": 8,
@@ -63,7 +62,7 @@
       "hover_image_url": "https://i.postimg.cc/yWP3DcMX/08.jpg",
       "name": "RÖNNINGE 뢴닝에",
       "description": "의자",
-      "price": "19,900"
+      "price": 19900
     }
   ]
 }

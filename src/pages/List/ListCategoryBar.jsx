@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { IoOptionsOutline } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const ListCategoryBar = () => {
+function ListCategoryBar() {
   return (
     <CategoryBarWrap>
       <ProductCategoryBar>
@@ -56,7 +56,7 @@ const ListCategoryBar = () => {
       </ProductCategoryBar>
     </CategoryBarWrap>
   );
-};
+}
 
 const CategoryBarWrap = styled.div``;
 
@@ -86,6 +86,7 @@ const ProductButton = styled.div`
   margin-top: 10px;
   color: #484848;
   font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
 `;
 
@@ -104,4 +105,5 @@ const ProductInfo = styled.div`
     text-decoration: underline;
   }
 `;
+
 export default ListCategoryBar;

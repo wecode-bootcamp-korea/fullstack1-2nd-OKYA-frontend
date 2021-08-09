@@ -6,51 +6,42 @@ import NavMenu from './NavMenu';
 import SearchInput from './SearchInput';
 import Icons from './Icons';
 import Modal from './Modal';
-import ImageSearchModal from './ImageSearchModal';
 import styled from 'styled-components';
 
 function Nav() {
-  const [showModal, setShowModal] = useState(false);
-  const [innerShowModal, setInnerShowModal] = useState(false);
-  const [showImageSearchModal, setShowImageSearchModal] = useState(false);
+  const [showModal, setshowModal] = useState(false);
+  const [innershowModal, setinnershowModal] = useState(false);
 
-  const openModal = e => {
-    setShowModal(!showModal);
+  const openmodal = e => {
+    setshowModal(!showModal);
   };
 
-  const closeModal = e => {
-    setInnerShowModal(false);
-    setShowModal(false);
+  const closemodal = e => {
+    setinnershowModal(false);
+    setshowModal(false);
   };
 
-  const toggleInnermodal = e => {
-    setInnerShowModal(!innerShowModal);
-  };
-
-  const toggleImageSearchModal = e => {
-    setShowImageSearchModal(!showImageSearchModal);
+  const innertogglemodal = e => {
+    setinnershowModal(!innershowModal);
   };
 
   return (
     <>
       <Container marginTop="20">
-        <SideMenuButton openModal={openModal} />
+        <SideMenuButton openmodal={openmodal} />
         <NavLogo />
-        <NavMenu openModal={openModal} />
-        <SearchInput toggleImageSearchModal={toggleImageSearchModal} />
+        <NavMenu openmodal={openmodal} />
+        <SearchInput />
         <Icons />
         <ModalWrapper showModal={showModal}>
           <Modal
-            closeModal={closeModal}
-            innerShowModal={innerShowModal}
-            toggleInnermodal={toggleInnermodal}
-            openModal={openModal}
+            closemodal={closemodal}
+            innershowModal={innershowModal}
+            innertogglemodal={innertogglemodal}
+            openmodal={openmodal}
           />
         </ModalWrapper>
       </Container>
-      <ImageModalWRapper showImageSearchModal={showImageSearchModal}>
-        <ImageSearchModal toggleImageSearchModal={toggleImageSearchModal} />
-      </ImageModalWRapper>
     </>
   );
 }
@@ -62,15 +53,8 @@ const ModalWrapper = styled.aside`
   bottom: 0;
   width: 100%;
   height: 100%;
+  z-index: 100;
   display: ${props => (props.showModal ? '' : 'none')};
-`;
-
-const ImageModalWRapper = styled.aside`
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: ${props => (props.showImageSearchModal ? '' : 'none')};
 `;
 
 export default Nav;

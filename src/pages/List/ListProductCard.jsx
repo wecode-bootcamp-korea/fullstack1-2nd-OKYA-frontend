@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IoBasketOutline } from 'react-icons/io5';
 
 const ListProductCard = props => {
+  const [isProductHover, setIsProductHover] = useState(false);
   const { isHighlight, img, hoverImg, name, description, price } = props;
 
+  const accessToken = localStorage.getItem('token');
+
+  if (!accessToken) {
+    alert('로그인이 필요합니다');
+  }
+
+  fetch('POST_API', {
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+
   const addToCart = () => {
-    fetch('http://10.89.2.30:8000/carts/', {
+    fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -17,13 +31,19 @@ const ListProductCard = props => {
     })
       .then(response => response.json())
       .then(result => {
-        alert('장바구니에 담겼습니다.');
-        props.history.push('/list');
+        if (result.token) {
+          localStorage.setItem('token', result.token);
+          alert('장바구니에 담겼습니다.');
+          return props.history.push('/list');
+        }
       });
   };
 
   return (
-    <ProductCardContainer>
+    <ProductCardContainer
+      onMouseEnter={() => setIsProductHover(true)}
+      onMouseLeave={() => setIsProductHover(false)}
+    >
       <ProductBox>
         <input type="checkbox" name="checkboxname" />
         <span>
@@ -55,11 +75,13 @@ const ListProductCard = props => {
           </ul>
         </ProductCartInfoWrap>
         <CartInfoWrap>
-          <CartButton>
-            <button onClick={addToCart}>
-              <IoBasketOutline />
-            </button>
-          </CartButton>
+          {isProductHover && (
+            <CartButton>
+              <button onClick={addToCart}>
+                <IoBasketOutline />
+              </button>
+            </CartButton>
+          )}
         </CartInfoWrap>
       </ProductInfoWrap>
     </ProductCardContainer>
@@ -165,13 +187,6 @@ const CartButton = styled.div`
     color: #fff;
     font-size: 40px;
     text-decoration: none;
-    &:last-child {
-      opacity: 0;
-      transition: all 0.3s ease;
-      &:hover {
-        opacity: 1;
-      }
-    }
   }
 `;
 
