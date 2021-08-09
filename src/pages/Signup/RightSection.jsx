@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
 
-const RightSection = () => {
+function RightSection(props) {
   const [values, setValues] = useState({
     email: '',
     password: '',
     name: '',
-    phone_number: '',
-    road_adress: '',
-    detail_address: '',
-    zip_code: '',
+    phoneNumber: '',
+    roadAddress: '',
+    detailAddress: '',
+    zipCode: '',
   });
 
   const updateValue = e => {
@@ -23,7 +23,7 @@ const RightSection = () => {
   console.log('values', values);
 
   const signup = () => {
-    fetch('http://지현ip:8000/signup', {
+    fetch('http://10.89.2.240:8000/users/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,16 +32,16 @@ const RightSection = () => {
         name: values.name,
         email: values.email,
         password: values.password,
-        phone_number: values.phone_number,
-        road_adress: values.road_adress,
-        detail_address: values.detail_address,
-        zip_code: values.zip_code,
+        phoneNumber: values.phoneNumber,
+        roadAddress: values.roadAddress,
+        detailAddress: values.detailAddress,
+        zipCode: values.zipCode,
       }),
     })
-      .then(response => response.json())
+      .then(res => res.json())
       .then(result => {
         alert('OKYA 회원가입을 축하드립니다.!!');
-        this.props.history.push('/');
+        props.history.push('/');
       });
   };
 
@@ -56,31 +56,31 @@ const RightSection = () => {
       ></input>
       <input
         type="text"
-        name="phone_number"
+        name="phoneNumber"
         placeholder="휴대폰번호"
-        value={values.phone_number}
+        value={values.phoneNumber}
         onChange={updateValue}
       ></input>
       <FindAdress>우편번호 찾기</FindAdress>
       <input
         type="text"
-        name="detail_address"
+        name="detailAddress"
         placeholder="상세주소"
-        value={values.detail_address}
+        value={values.detailAddress}
         onChange={updateValue}
       ></input>
       <input
         type="text"
-        name="road_adress"
+        name="roadAddress"
         placeholder="도로명주소"
-        value={values.road_adress}
+        value={values.roadAddress}
         onChange={updateValue}
       ></input>
       <PostcodeInput
         type="text"
-        name="zip_code"
+        name="zipCode"
         placeholder="우편번호"
-        value={values.zip_code}
+        value={values.zipCode}
         onChange={updateValue}
       ></PostcodeInput>
       <input
@@ -100,7 +100,7 @@ const RightSection = () => {
       <SignupSubmit onClick={signup}>입력 정보 제출하기</SignupSubmit>
     </RightSectionWrapper>
   );
-};
+}
 
 const RightSectionWrapper = styled.div`
   display: flex;
