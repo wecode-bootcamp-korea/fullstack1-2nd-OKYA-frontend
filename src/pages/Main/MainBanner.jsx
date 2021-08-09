@@ -28,7 +28,7 @@ const MainBannerWrap = styled.div`
 
 const ImageContainer = styled.div`
   width: 66%;
-  height: auto;
+  height: 100%;
 `;
 
 const Image = styled.img`
