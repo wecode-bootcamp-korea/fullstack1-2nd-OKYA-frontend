@@ -38,7 +38,7 @@ const MasonryImage = styled.img`
 const ImageFiguer = styled.figure`
   border-radius: 2em;
   grid-column: span 2;
-  grid-row: span 4;
+  grid-row: ${props => props.span || 'span 4'}; ;
 `;
 
 const ImageFiguerId2 = styled.figure`

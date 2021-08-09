@@ -15,7 +15,7 @@ const MasonryImageWrap = () => {
   return masonryImages.map((masonryImage, index) => {
     return (
       <MasonryImages
-        key={index}
+        index={index}
         id={masonryImage.id}
         image={masonryImage.image_url}
         alt={masonryImage.alt}

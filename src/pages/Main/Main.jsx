@@ -22,9 +22,7 @@ const Main = () => {
   return (
     <Container>
       <MainBanner />
-      {/* MainPromotion 구현중 */}
       <MainPromotion />
-      {/* MainPromotion 구현중 */}
       <IdeaCategories
         masonryImages={masonryImages}
         setMasonryImages={setMasonryImages}
