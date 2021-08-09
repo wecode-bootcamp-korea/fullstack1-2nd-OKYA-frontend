@@ -35,7 +35,7 @@ function ImageSearchModal({ toggleImageSearchModal }) {
             <CautionSign />
             <CautionText>
               Hej! 이미지는 검색 기능의 향상을 위해서만 사용됩니다. 개인 정보
-              유출에 해당될 수 있는 이미지가 아닌지 유의해 주세요!
+              유출에 해당될 수 있는 이미지가 아닌지 유의해 주세요!!
             </CautionText>
           </Caution>
           <MiddleTitle>
