@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import { KAKAO_LOGIN_API } from '../../config';
 // import { Link } from 'react-router-dom';
 
 function KakaoButton(props) {
@@ -10,7 +11,7 @@ function KakaoButton(props) {
       scope: 'account_email',
       success: authObj => {
         // 로그인 성공시 토큰 발급 받음, 그 토큰을 백엔드 서버로 넘긴다//
-        axios('http://10.89.1.22:8000/kakao/login', {
+        axios(KAKAO_LOGIN_API, {
           method: 'post',
           //카카오에서 받은 토큰 --> 백엔드 전달//
           headers: {

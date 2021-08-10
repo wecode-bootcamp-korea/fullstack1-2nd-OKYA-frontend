@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
+import { SIGNUP_API } from '../../config';
 
 function RightSection(props) {
   const [values, setValues] = useState({
@@ -23,7 +24,7 @@ function RightSection(props) {
   console.log('values', values);
 
   const signup = () => {
-    fetch('http://10.89.2.240:8000/users/signup', {
+    fetch(SIGNUP_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

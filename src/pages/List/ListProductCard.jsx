@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IoBasketOutline } from 'react-icons/io5';
 import { useHistory } from 'react-router-dom';
+import { CART_API } from '../../config';
 
 const ListProductCard = props => {
   const [isProductHover, setIsProductHover] = useState(false);
@@ -16,7 +17,7 @@ const ListProductCard = props => {
       return history.push('/login');
     }
 
-    fetch('http://10.89.2.240:8000/carts/', {
+    fetch(CART_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import CartContainer from './CartContainer';
 import EmptyCart from './EmptyCart';
-import { ERROR_MESSAGES } from '../../config';
+import { ERROR_MESSAGES, CART_API } from '../../config';
 
 const CartWrap = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -15,7 +15,7 @@ const CartWrap = () => {
       alert('로그인 후 이용하실 수 있습니다.');
     }
 
-    fetch('http://10.89.2.240:8000/carts/', {
+    fetch(CART_API, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const CartWrap = () => {
       return history.push('/login');
     }
 
-    fetch('http://10.89.2.240:8000/carts/', {
+    fetch(CART_API, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const CartWrap = () => {
       })
       .catch(err => console.error(err));
 
-    fetch('http://10.89.2.240:8000/carts/', {
+    fetch(CART_API, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
