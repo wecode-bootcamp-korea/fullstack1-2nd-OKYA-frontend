@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Nav from '../../components/Nav/Nav';
 import Container from '../../components/Container/Container';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
@@ -8,7 +7,6 @@ import RightSection from './RightSection';
 const Signup = () => {
   return (
     <>
-      <Nav />
       <Container>
         <Wrapper>
           <LeftSection />
@@ -22,7 +20,8 @@ const Signup = () => {
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 5rem 5rem;
+  margin: 7rem 7rem;
+  margin-bottom: 400px;
   width: 90vw;
 `;
 

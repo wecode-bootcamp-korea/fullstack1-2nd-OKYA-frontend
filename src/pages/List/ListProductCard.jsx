@@ -85,7 +85,6 @@ const ListProductCard = props => {
 const ProductCardContainer = styled.div`
   display: block;
   padding-bottom: 100px;
-  margin-bottom: 100px;
   border-bottom: 0.5px solid #dfdfdf;
 `;
 
