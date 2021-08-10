@@ -60,7 +60,7 @@ const RightSection = styled.div`
   position: relative;
   top: 15rem;
   grid-column: 7 / 14;
-  line-height: 2.7em;
+  line-height: 2.71em;
   width: 28rem;
 `;
 

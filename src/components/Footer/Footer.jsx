@@ -70,6 +70,7 @@ const Footer = () => {
 
 const Wrapper = styled.div`
   display: flex;
+  margin-top: 150px;
   padding-top: 100px;
   height: 500px;
   background-color: #f5f5f5;
